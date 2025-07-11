@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+
+
+
+     <div class="container">
+        <div class="row">
+            <div class="col-md-12 mt-5 p-5 bg-body-secondary shadow-lg rounded">
+                <h1 class="text-center ">BookMarker</h1>
+                <p class="text-center mb-5">Bookmark your favorite sites </p>
+                <label for="siteName">Site Name </label>
+                <input type="text" id="siteName" class="form-control mb-2" placeholder="Enter site name">
+                <label for="siteUrl">Site URL </label>    
+                <input type="text" id="siteUrl" class="form-control mb-2" placeholder="Enter site URL">
+
+                <div class="d-flex justify-content-center mt-5">
+                    <button class="btn btn-danger w-25" id="submitBtn">Submit</button>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 mt-5 p-5">
+                <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Index</th>
+      <th scope="col">Name</th>
+      <th scope="col">Visit</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody id="bookmarkTable">
+  </tbody>
+</table>
+
+            </div>
+        </div>
+
+    </div>
+    
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
